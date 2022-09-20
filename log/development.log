@@ -1,0 +1,521 @@
+Started GET "/" for ::1 at 2022-09-20 12:39:44 +0545
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ajayshrestha/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ajayshrestha/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 634)
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 5091)
+
+
+Started GET "/" for ::1 at 2022-09-20 12:42:22 +0545
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ajayshrestha/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ajayshrestha/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 297)
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 1004)
+
+
+Started GET "/pages/home" for ::1 at 2022-09-20 12:42:26 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 162.0ms | Allocations: 91508)
+Completed 200 OK in 165ms (Views: 163.6ms | Allocations: 92477)
+
+
+Started GET "/pages/about" for ::1 at 2022-09-20 12:43:19 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 14606)
+Completed 200 OK in 8ms (Views: 7.9ms | Allocations: 15562)
+
+
+Started GET "/pages/abouts" for ::1 at 2022-09-20 12:43:22 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/pages/abouts"):
+  
+Started GET "/pages/about" for ::1 at 2022-09-20 12:43:24 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2616)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 2912)
+
+
+Started GET "/pages/about" for ::1 at 2022-09-20 12:44:01 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 1.1ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3147)
+Completed 200 OK in 13ms (Views: 10.9ms | Allocations: 3953)
+
+
+Started GET "/pages/about" for ::1 at 2022-09-20 12:44:03 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2459)
+Completed 200 OK in 5ms (Views: 4.6ms | Allocations: 2732)
+
+
+Started GET "/pages/about" for ::1 at 2022-09-20 12:44:13 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 228)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3087)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 3899)
+
+
+Started GET "/pages/home" for ::1 at 2022-09-20 12:44:15 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2550)
+Completed 200 OK in 6ms (Views: 5.0ms | Allocations: 2881)
+
+
+Started GET "/pages/home" for ::1 at 2022-09-20 12:44:43 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 228)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3096)
+Completed 200 OK in 13ms (Views: 11.4ms | Allocations: 3912)
+
+
+Started GET "/pages/about" for ::1 at 2022-09-20 12:44:47 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2568)
+Completed 200 OK in 7ms (Views: 5.3ms | Allocations: 2894)
+
+
+Started GET "/pages/home" for ::1 at 2022-09-20 12:44:48 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2465)
+Completed 200 OK in 6ms (Views: 5.4ms | Allocations: 2720)
+
+
+Started GET "/pages/about" for ::1 at 2022-09-20 12:44:49 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2456)
+Completed 200 OK in 6ms (Views: 5.2ms | Allocations: 2711)
+
+
+Started GET "/pages/home" for ::1 at 2022-09-20 12:44:50 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2480)
+Completed 200 OK in 7ms (Views: 6.2ms | Allocations: 2736)
+
+
+Started GET "/pages/home" for ::1 at 2022-09-20 12:56:02 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/pages/home"):
+  
+Started GET "/" for ::1 at 2022-09-20 12:56:05 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 14448)
+Completed 200 OK in 14ms (Views: 13.9ms | Allocations: 15080)
+
+
+Started GET "/pages/about" for ::1 at 2022-09-20 12:56:13 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 21.0ms | Allocations: 4461)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 4540)
+Completed 500 Internal Server Error in 23ms (Allocations: 4810)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_home_path' for #<ActionView::Base:0x00000000015b58>
+
+'.freeze;@output_buffer.append=( link_to 'Home', pages_home_path  );
+                                                 ^^^^^^^^^^^^^^^
+Did you mean?  pages_about_path):
+    1: <h1>This is about page </h1>
+    2: 
+    3: <%= link_to 'Home', pages_home_path  %>
+  
+app/views/pages/about.html.erb:3
+Started GET "/pages/about" for ::1 at 2022-09-20 12:59:58 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/pages/about"):
+  
+Started GET "/" for ::1 at 2022-09-20 13:00:01 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 233)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 14747)
+Completed 200 OK in 15ms (Views: 14.3ms | Allocations: 15660)
+
+
+Started GET "/about" for ::1 at 2022-09-20 13:00:04 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2560)
+Completed 200 OK in 7ms (Views: 6.0ms | Allocations: 2885)
+
+
+Started GET "/" for ::1 at 2022-09-20 13:00:06 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2453)
+Completed 200 OK in 5ms (Views: 4.5ms | Allocations: 2708)
+
+
+Started GET "/about" for ::1 at 2022-09-20 13:00:07 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2450)
+Completed 200 OK in 7ms (Views: 6.2ms | Allocations: 2705)
+
+
+Started GET "/" for ::1 at 2022-09-20 13:00:07 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2480)
+Completed 200 OK in 7ms (Views: 6.3ms | Allocations: 2736)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:15:18 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 238)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 14592)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 15548)
+
+
+Started GET "/about" for ::1 at 2022-09-20 20:15:23 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 1.6ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 2525)
+Completed 200 OK in 39ms (Views: 37.3ms | Allocations: 2850)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:15:24 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 2397)
+Completed 200 OK in 27ms (Views: 26.1ms | Allocations: 2653)
+
+
+Started GET "/contact" for ::1 at 2022-09-20 20:15:26 +0545
+Processing by WelcomeController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/contact.html.erb within layouts/application
+  Rendered welcome/contact.html.erb within layouts/application (Duration: 0.8ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2771)
+Completed 200 OK in 9ms (Views: 7.2ms | Allocations: 3523)
+
+
+Started GET "/contact" for ::1 at 2022-09-20 20:16:14 +0545
+Processing by WelcomeController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/contact.html.erb within layouts/application
+  Rendered welcome/contact.html.erb within layouts/application (Duration: 0.6ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3039)
+Completed 200 OK in 7ms (Views: 6.4ms | Allocations: 3884)
+
+
+Started GET "/contact" for ::1 at 2022-09-20 20:16:32 +0545
+Processing by WelcomeController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/contact.html.erb within layouts/application
+  Rendered welcome/contact.html.erb within layouts/application (Duration: 0.7ms | Allocations: 223)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3022)
+Completed 200 OK in 12ms (Views: 10.2ms | Allocations: 3852)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:16:34 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 225)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2839)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 3471)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:17:06 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 19.7ms | Allocations: 4619)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 4707)
+Completed 500 Internal Server Error in 23ms (Allocations: 5532)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `welcome_contact_path' for #<ActionView::Base:0x0000000001d650>
+
+'.freeze;@output_buffer.append=( link_to 'Contact', welcome_contact_path );
+                                                    ^^^^^^^^^^^^^^^^^^^^):
+    1: <h1> This is home page </h1>
+    2: 
+    3: <%= link_to 'About', about_path %>
+    4: <%= link_to 'Contact', welcome_contact_path %>
+  
+app/views/pages/home.html.erb:4
+Started GET "/" for ::1 at 2022-09-20 20:18:03 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 271)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3080)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 3904)
+
+
+Started GET "/contact" for ::1 at 2022-09-20 20:18:06 +0545
+Processing by WelcomeController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/contact.html.erb within layouts/application
+  Rendered welcome/contact.html.erb within layouts/application (Duration: 1.2ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2842)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 3476)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:18:07 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2439)
+Completed 200 OK in 5ms (Views: 4.5ms | Allocations: 2713)
+
+
+Started GET "/about" for ::1 at 2022-09-20 20:18:08 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 1.1ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2518)
+Completed 200 OK in 9ms (Views: 7.9ms | Allocations: 2842)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:18:09 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2430)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 2685)
+
+
+Started GET "/contact" for ::1 at 2022-09-20 20:18:10 +0545
+Processing by WelcomeController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/contact.html.erb within layouts/application
+  Rendered welcome/contact.html.erb within layouts/application (Duration: 0.2ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2403)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 2659)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:18:11 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2442)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 2697)
+
+
+Started GET "/about" for ::1 at 2022-09-20 20:18:11 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2409)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 2664)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:18:12 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2436)
+Completed 200 OK in 10ms (Views: 8.8ms | Allocations: 2691)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:18:41 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 271)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3071)
+Completed 200 OK in 12ms (Views: 10.0ms | Allocations: 3883)
+
+
+Started GET "/about" for ::1 at 2022-09-20 20:18:44 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 1.2ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2552)
+Completed 200 OK in 9ms (Views: 7.2ms | Allocations: 2878)
+
+
+Started GET "/contact" for ::1 at 2022-09-20 20:18:46 +0545
+Processing by WelcomeController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/contact.html.erb within layouts/application
+  Rendered welcome/contact.html.erb within layouts/application (Duration: 1.3ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2830)
+Completed 200 OK in 12ms (Views: 10.6ms | Allocations: 3445)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:18:48 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 56.3ms | Allocations: 2430)
+Completed 200 OK in 58ms (Views: 57.2ms | Allocations: 2703)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:19:14 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 274)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3101)
+Completed 200 OK in 12ms (Views: 9.7ms | Allocations: 3930)
+
+
+Started GET "/contact" for ::1 at 2022-09-20 20:19:16 +0545
+Processing by WelcomeController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/contact.html.erb within layouts/application
+  Rendered welcome/contact.html.erb within layouts/application (Duration: 1.2ms | Allocations: 268)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2897)
+Completed 200 OK in 12ms (Views: 9.5ms | Allocations: 3532)
+
+
+Started GET "/about" for ::1 at 2022-09-20 20:19:18 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 1.4ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2546)
+Completed 200 OK in 11ms (Views: 9.2ms | Allocations: 2889)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:19:19 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2448)
+Completed 200 OK in 7ms (Views: 6.3ms | Allocations: 2703)
+
+
+Started GET "/about" for ::1 at 2022-09-20 20:19:21 +0545
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 68)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2433)
+Completed 200 OK in 7ms (Views: 6.3ms | Allocations: 2688)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:19:21 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2412)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 2667)
+
+
+Started GET "/contact" for ::1 at 2022-09-20 20:19:22 +0545
+Processing by WelcomeController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/contact.html.erb within layouts/application
+  Rendered welcome/contact.html.erb within layouts/application (Duration: 0.4ms | Allocations: 68)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2424)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 2680)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:19:23 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2436)
+Completed 200 OK in 8ms (Views: 6.7ms | Allocations: 2691)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:28:55 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 566)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 35754)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 39131)
+
+
+Started GET "/contact" for ::1 at 2022-09-20 20:28:57 +0545
+Processing by WelcomeController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/contact.html.erb within layouts/application
+  Rendered welcome/contact.html.erb within layouts/application (Duration: 0.8ms | Allocations: 273)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2895)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 3670)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:28:58 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2422)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 2705)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:30:16 +0545
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ajayshrestha/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ajayshrestha/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 304)
+Completed 200 OK in 1ms (Views: 0.8ms | Allocations: 1158)
+
+
+Started GET "/" for ::1 at 2022-09-20 20:30:17 +0545
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ajayshrestha/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ajayshrestha/.rvm/rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 297)
+Completed 200 OK in 4ms (Views: 3.0ms | Allocations: 997)
+
+
