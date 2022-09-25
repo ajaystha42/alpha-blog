@@ -12,4 +12,8 @@ class PagesController < ApplicationController
     def contact
         
     end
+
+    def careers 
+
+    end
 end
