@@ -5466,3 +5466,180 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 2643)
 
 
+Started GET "/" for ::1 at 2022-10-07 08:55:54 +0545
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 331)
+Importmap skipped missing path: stimulus-loading.js
+Importmap skipped missing path: stimulus-loading.js
+  Rendered layout layouts/application.html.erb (Duration: 95.4ms | Allocations: 57533)
+Completed 200 OK in 100ms (Views: 96.9ms | ActiveRecord: 0.0ms | Allocations: 60874)
+
+
+Started GET "/articles" for ::1 at 2022-10-07 08:56:02 +0545
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:3
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 5511)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 7873)
+Completed 200 OK in 20ms (Views: 13.2ms | ActiveRecord: 1.0ms | Allocations: 9630)
+
+
+Started GET "/articles/new" for ::1 at 2022-10-07 08:56:05 +0545
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 3296)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 5332)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 5785)
+
+
+Started POST "/articles" for ::1 at 2022-10-07 08:56:24 +0545
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asd", "description"=>"asd"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2020)
+Importmap skipped missing path: stimulus-loading.js
+Importmap skipped missing path: stimulus-loading.js
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 13331)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 18188)
+
+
+Started POST "/articles" for ::1 at 2022-10-07 08:56:44 +0545
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asd", "description"=>"asd"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2022)
+Importmap skipped missing path: stimulus-loading.js
+Importmap skipped missing path: stimulus-loading.js
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 13423)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 17555)
+
+
+Started POST "/articles" for ::1 at 2022-10-07 08:56:46 +0545
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asd", "description"=>"asd"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1800)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3699)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 4819)
+
+
+Started POST "/articles" for ::1 at 2022-10-07 08:56:48 +0545
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asd", "description"=>"asd"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1800)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3698)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 4710)
+
+
+Started POST "/articles" for ::1 at 2022-10-07 08:56:48 +0545
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asd", "description"=>"asd"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1800)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3698)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4698)
+
+
+Started POST "/articles" for ::1 at 2022-10-07 08:56:49 +0545
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asd", "description"=>"asd"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1800)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3698)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 4696)
+
+
+Started POST "/articles" for ::1 at 2022-10-07 08:56:49 +0545
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asd", "description"=>"asd"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1800)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3698)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 4699)
+
+
+Started POST "/articles" for ::1 at 2022-10-07 08:56:49 +0545
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asd", "description"=>"asd"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1800)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3698)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 4705)
+
+
+Started POST "/articles" for ::1 at 2022-10-07 08:56:51 +0545
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asd", "description"=>"asdasad"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1800)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3699)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 4718)
+
+
+Started POST "/articles" for ::1 at 2022-10-07 08:56:51 +0545
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asd", "description"=>"asdasad"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1800)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3698)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 4713)
+
+
+Started POST "/articles" for ::1 at 2022-10-07 08:56:52 +0545
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asd", "description"=>"asdasad"}, "commit"=>"Create Article"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1800)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3698)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 4716)
+
+
+Started GET "/home" for ::1 at 2022-10-07 08:56:59 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/careers" for ::1 at 2022-10-07 08:57:02 +0545
+Processing by PagesController#careers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/careers.html.erb within layouts/application
+  Rendered pages/careers.html.erb within layouts/application (Duration: 1.1ms | Allocations: 325)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2657)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 3407)
+
+
+Started GET "/careers" for ::1 at 2022-10-07 08:57:07 +0545
+Processing by PagesController#careers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/careers.html.erb within layouts/application
+  Rendered pages/careers.html.erb within layouts/application (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2153)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 2423)
+
+
+Started GET "/" for ::1 at 2022-10-07 08:57:14 +0545
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2374)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2995)
+
+
