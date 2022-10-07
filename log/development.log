@@ -5643,3 +5643,609 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2995)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateAdminUsers (20221007031503)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221007031503"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-10-07 09:01:22 +0545
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 330)
+Importmap skipped missing path: stimulus-loading.js
+Importmap skipped missing path: stimulus-loading.js
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 26507)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 29882)
+
+
+Started GET "/admin_users/sign_in" for ::1 at 2022-10-07 09:01:26 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 733)
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 16.5ms | Allocations: 6334)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 8421)
+Completed 200 OK in 39ms (Views: 20.4ms | ActiveRecord: 0.7ms | Allocations: 18900)
+
+
+Started GET "/admin_users/sign_up" for ::1 at 2022-10-07 09:01:28 +0545
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 217)
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2246)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 4344)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 5611)
+
+
+Started POST "/admin_users" for ::1 at 2022-10-07 09:01:43 +0545
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"er.ajaystha@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? LIMIT ?[0m  [["email", "er.ajaystha@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 622)
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 79)
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2515)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 4534)
+Completed 200 OK in 748ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 13510)
+
+
+Started POST "/admin_users" for ::1 at 2022-10-07 09:01:53 +0545
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"er.ajaystha@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? LIMIT ?[0m  [["email", "er.ajaystha@gmail.com"], ["LIMIT", 1]]
+  [1m[36mAdminUser Create (0.3ms)[0m  [1m[32mINSERT INTO "admin_users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "er.ajaystha@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["sign_in_count", 0], ["current_sign_in_at", nil], ["last_sign_in_at", nil], ["current_sign_in_ip", nil], ["last_sign_in_ip", nil], ["created_at", "2022-10-07 03:16:54.035707"], ["updated_at", "2022-10-07 03:16:54.035707"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Update (0.1ms)[0m  [1m[33mUPDATE "admin_users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2022-10-07 03:16:54.038194"], ["last_sign_in_at", "2022-10-07 03:16:54.038194"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", "2022-10-07 03:16:54.038253"], ["id", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 285ms (ActiveRecord: 1.6ms | Allocations: 10669)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:01:54 +0545
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 2123)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 2380)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:01:57 +0545
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2076)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2331)
+
+
+Started GET "/admin_users/sign_in" for ::1 at 2022-10-07 09:02:02 +0545
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms | Allocations: 1813)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:02:02 +0545
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2147)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2403)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:06:01 +0545
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2106)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 2361)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:06:03 +0545
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2097)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2352)
+
+
+Started GET "/articles/new" for ::1 at 2022-10-07 09:06:06 +0545
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1941)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 4066)
+Completed 200 OK in 14ms (Views: 6.8ms | ActiveRecord: 0.4ms | Allocations: 8238)
+
+
+Started GET "/admin_users/sign_in" for ::1 at 2022-10-07 09:06:12 +0545
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 1638)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:06:12 +0545
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2126)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2417)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:09:10 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 380)
+Importmap skipped missing path: stimulus-loading.js
+Importmap skipped missing path: stimulus-loading.js
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 12114)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 12879)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:09:49 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 377)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2990)
+Completed 200 OK in 11ms (Views: 9.1ms | Allocations: 3842)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:10:00 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 38.5ms | Allocations: 5214)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 5302)
+Completed 500 Internal Server Error in 43ms (Allocations: 6128)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `destroy_admin_user_session' for #<ActionView::Base:0x00000000010ab8>
+
+'.freeze;@output_buffer.append=( link_to 'Sign out', destroy_admin_user_session );
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  destroy_admin_user_session_url
+               destroy_admin_user_session_path):
+    4: <%= link_to 'Contact', contact_path %>
+    5: <%= link_to 'Careers', careers_path %>
+    6: <%= link_to 'Articles', articles_path %>
+    7: <%= link_to 'Sign out', destroy_admin_user_session %>
+  
+app/views/pages/home.html.erb:7
+Started GET "/" for ::1 at 2022-10-07 09:10:08 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 406)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3046)
+Completed 200 OK in 12ms (Views: 10.6ms | Allocations: 3882)
+
+
+Started GET "/admin_users/sign_out" for ::1 at 2022-10-07 09:10:13 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/admin_users/sign_out"):
+  
+Started GET "/" for ::1 at 2022-10-07 09:10:39 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 432)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3077)
+Completed 200 OK in 12ms (Views: 10.5ms | Allocations: 3912)
+
+
+Started GET "/admin_users/sign_out" for ::1 at 2022-10-07 09:10:40 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/admin_users/sign_out"):
+  
+Started GET "/admin_users/sign_out" for ::1 at 2022-10-07 09:12:16 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/admin_users/sign_out"):
+  
+Started GET "/admin_users/sign_out" for ::1 at 2022-10-07 09:12:17 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/admin_users/sign_out"):
+  
+Started GET "/" for ::1 at 2022-10-07 09:15:13 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.3ms | Allocations: 5594)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 8003)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 1.3ms | Allocations: 8834)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:15:15 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1117)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3029)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 3306)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:15:24 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1633)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4033)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.2ms | Allocations: 4853)
+
+
+Started GET "/admin_users/sign_out" for ::1 at 2022-10-07 09:15:27 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/admin_users/sign_out"):
+  
+Started GET "/admin_users/sign_out" for ::1 at 2022-10-07 09:17:31 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/admin_users/sign_out"):
+  
+Started GET "/admin_users/sign_out" for ::1 at 2022-10-07 09:17:52 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/admin_users/sign_out"):
+  
+Started GET "/" for ::1 at 2022-10-07 09:17:56 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1626)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4037)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.2ms | Allocations: 4828)
+
+
+Started GET "/admin_users/sign_out" for ::1 at 2022-10-07 09:17:58 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/admin_users/sign_out"):
+  
+Started GET "/" for ::1 at 2022-10-07 09:18:05 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1642)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 4054)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 4889)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:18:06 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1111)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3023)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 3297)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:18:06 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1114)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3038)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 3294)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:18:06 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1096)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3008)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 3263)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:18:06 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1114)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3026)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 3281)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:18:07 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1108)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3020)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 3275)
+
+
+Started GET "/admin_users/sign_out" for ::1 at 2022-10-07 09:18:08 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/admin_users/sign_out"):
+  
+Started GET "/" for ::1 at 2022-10-07 09:18:45 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1624)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 4036)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.2ms | Allocations: 4850)
+
+
+Started GET "/admin_users/sign_out" for ::1 at 2022-10-07 09:18:48 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/admin_users/sign_out"):
+  
+Started GET "/" for ::1 at 2022-10-07 09:20:30 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 5319)
+Importmap skipped missing path: stimulus-loading.js
+Importmap skipped missing path: stimulus-loading.js
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 16818)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.5ms | Allocations: 17437)
+
+
+Started GET "/admin_users/sign_out" for ::1 at 2022-10-07 09:20:31 +0545
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 0.2ms | Allocations: 3071)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:20:31 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 499)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2538)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2839)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:20:33 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 382)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2303)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 2560)
+
+
+Started GET "/admin_users/sign_in" for ::1 at 2022-10-07 09:20:47 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 561)
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2317)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4403)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 5649)
+
+
+Started GET "/admin_users/sign_up" for ::1 at 2022-10-07 09:20:49 +0545
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 210)
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 102)
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 21.9ms | Allocations: 2101)
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 4198)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.0ms | Allocations: 5433)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:20:52 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 446)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2358)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 2632)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:21:33 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 659)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3068)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 3897)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:21:35 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 262)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2179)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 2454)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:21:35 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 265)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2178)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 2433)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:21:36 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 268)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2180)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2435)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:21:36 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 268)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2180)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2435)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:21:36 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 268)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2180)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 2435)
+
+
+Started GET "/admin_users/sign_in" for ::1 at 2022-10-07 09:21:38 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 543)
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2258)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4340)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 5504)
+
+
+Started POST "/admin_users/sign_in" for ::1 at 2022-10-07 09:21:45 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"er.ajaystha@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "er.ajaystha@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Update (0.3ms)[0m  [1m[33mUPDATE "admin_users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["sign_in_count", 2], ["current_sign_in_at", "2022-10-07 03:36:45.453881"], ["updated_at", "2022-10-07 03:36:45.454044"], ["id", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 293ms (ActiveRecord: 1.6ms | Allocations: 13417)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:21:45 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1194)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 3225)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 3501)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:21:49 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1081)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2993)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 3248)
+
+
+Started GET "/articles" for ::1 at 2022-10-07 09:21:52 +0545
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:3
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2648)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 5026)
+Completed 200 OK in 19ms (Views: 14.7ms | ActiveRecord: 1.2ms | Allocations: 6428)
+
+
+Started GET "/careers" for ::1 at 2022-10-07 09:21:57 +0545
+Processing by PagesController#careers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/careers.html.erb within layouts/application
+  Rendered pages/careers.html.erb within layouts/application (Duration: 1.2ms | Allocations: 237)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2319)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2660)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:21:59 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:3
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1157)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3069)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 3324)
+
+
+Started GET "/admin_users/sign_out" for ::1 at 2022-10-07 09:22:00 +0545
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 1871)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:22:00 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 284)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2206)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 2461)
+
+
+Started GET "/" for ::1 at 2022-10-07 09:22:02 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 271)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2183)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 2438)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-10-07 09:25:31 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/admin/dashboard"):
+  
+Started GET "/" for ::1 at 2022-10-07 09:25:35 +0545
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 271)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2195)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 2451)
+
+
