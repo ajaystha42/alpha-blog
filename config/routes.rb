@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   devise_for :admin_users
+  post 'admin_user/enable_otp'
+  post 'admin_user/disable_otp'
   devise_scope :admin_user do  
     get '/admin_users/sign_out' => 'devise/sessions#destroy'     
  end

@@ -69,5 +69,11 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # config.active_record.encryption.primary_key = "jIDtfyQnHOWdQNBFhlbL9KR02wOnNi1p"
+  # config.active_record.encryption.deterministic_key = "MFVANzhPCFIqMJnSLgckd2ZLexLrl9wi"
+  # config.active_record.encryption.key_derivation_salt = "CXSmO0MU5BeTcA2ve59O6Y5gYIFYAQJE"
 
+  config.active_record.encryption.primary_key =  ENV["ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY"]
+  config.active_record.encryption.deterministic_key = ENV["ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY"]
+  config.active_record.encryption.key_derivation_salt = ENV["ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT"]
 end

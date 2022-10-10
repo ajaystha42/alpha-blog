@@ -1,6 +1,8 @@
 <h1> Home Page </h1>
 
-<% if admin_user_signed_in? %>
+<%
+=begin%>
+ <% if admin_user_signed_in? %>
 <%= link_to 'Signout', destroy_admin_user_session_path, :method => :delete %>
 <%= link_to 'About', about_path %>
 <%= link_to 'Contact', contact_path %>
@@ -9,5 +11,31 @@
 <% else %>
 <%= link_to 'Signin', new_admin_user_session_path %>
 
+<% end %> 
+<%
+=end%>
+
+<% if !current_admin_user %>
+  <%= link_to "Sign up", new_admin_user_registration_path %>
+  <%= link_to "Login", new_admin_user_session_path %>
 <% end %>
 
+<% if current_admin_user %>
+  <% if !current_admin_user.otp_required_for_login %>
+    <%= button_to "Enable 2FA", admin_user_enable_otp_path, :method => :post %>
+  <% end %>
+
+  <% if current_admin_user.otp_required_for_login %>
+    <%= button_to "Disable 2FA", admin_user_disable_otp_path, :method => :post %>
+    <%
+=begin%>
+ <%= raw RQRCode::render_qrcode(current_admin_user.otp_provisioning_uri(current_admin_user.email, issuer: "Devise-Two-Factor-Demo"),
+                                   :svg,
+                                   :level => :l,
+                                   :unit => 2) %> 
+<%
+=end%>
+    <br>
+  <% end %>
+  <%= link_to "Log out", destroy_admin_user_session_path, :method => :delete %>
+<% end %>
