@@ -8,9 +8,12 @@
 #
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
+Devise.otp_allowed_drift = 240 # value in seconds
 Devise.setup do |config|
   config.warden do |manager|
     manager.default_strategies(:scope => :admin_user).unshift :two_factor_authenticatable
+# manager.default_strategies(:scope => :admin_user).unshift :two_factor_backupable
+
   end
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
   require 'devise/orm/active_record'

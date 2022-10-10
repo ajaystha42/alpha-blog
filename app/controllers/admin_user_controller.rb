@@ -15,4 +15,14 @@ class AdminUserController < ApplicationController
         # redirect_to home_index_path
       end
 
+      def otp_provisioning_uri
+        issuer = 'Your App'
+        label = "#{issuer}:#{current_admin_user.email}"
+        current_user.otp_provisioning_uri(label, issuer: issuer)
+       # > "otpauth://totp/Your%20App:user@example.com?secret=[otp_secret]&issuer=Your+App"
+      end
+
+      # def otp_backup_codes
+
+      # end
 end
