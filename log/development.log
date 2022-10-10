@@ -10479,3 +10479,62 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 279ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3889)
 
 
+Started GET "/admin_users/sign_in" for ::1 at 2022-10-10 10:05:37 +0545
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 737)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 5891)
+Importmap skipped missing path: stimulus-loading.js
+Importmap skipped missing path: stimulus-loading.js
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 30235)
+Completed 200 OK in 34ms (Views: 22.6ms | ActiveRecord: 0.3ms | Allocations: 45064)
+
+
+Started POST "/admin_users/sign_in" for ::1 at 2022-10-10 10:05:40 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"abc@test.com", "password"=>"[FILTERED]", "otp_attempt"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "abc@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 27ms (ActiveRecord: 0.6ms | Allocations: 3894)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"abc@test.com", "password"=>"[FILTERED]", "otp_attempt"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/ajayshrestha/.rvm/gems/ruby-3.1.2/gems/devise-4.8.1/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1619)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 3630)
+Completed 200 OK in 267ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 4936)
+
+
+Started POST "/admin_users/sign_in" for ::1 at 2022-10-10 10:18:25 +0545
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"ajay@test.com", "password"=>"[FILTERED]", "otp_attempt"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "ajay@test.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Update (0.3ms)[0m  [1m[33mUPDATE "admin_users" SET "updated_at" = ?, "consumed_timestep" = ? WHERE "admin_users"."id" = ?[0m  [["updated_at", "2022-10-10 04:33:25.247502"], ["consumed_timestep", 55512546], ["id", 7]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "ajay@test.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Update (0.2ms)[0m  [1m[33mUPDATE "admin_users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["sign_in_count", 3], ["current_sign_in_at", "2022-10-10 04:33:25.493299"], ["last_sign_in_at", "2022-10-10 04:06:20.008364"], ["updated_at", "2022-10-10 04:33:25.493522"], ["id", 7]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 290ms (ActiveRecord: 2.0ms | Allocations: 31474)
+
+
+Started GET "/" for ::1 at 2022-10-10 10:18:25 +0545
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2312)
+Importmap skipped missing path: stimulus-loading.js
+Importmap skipped missing path: stimulus-loading.js
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 26564)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.1ms | Allocations: 28133)
+
+
